@@ -10,3 +10,15 @@ body {
 h1, h2, h3, h4, h5, h6, button {
   @apply font-inter;
 }
+
+*::-webkit-scrollbar {
+  @apply w-2;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-zinc-950 border-[5px];
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700 rounded-2xl;
+}
