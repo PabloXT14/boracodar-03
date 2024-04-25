@@ -4,7 +4,7 @@ import { PageDescription } from './components/page-description'
 
 export function App() {
   return (
-    <main>
+    <main className="mx-20 my-28 flex w-auto flex-col">
       <PageDescription />
       <ButtonsTable />
       <ButtonsDemo />
