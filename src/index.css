@@ -4,5 +4,9 @@
 
 
 body {
-  @apply font-roboto;
+  @apply font-roboto bg-zinc-950 text-white min-h-screen;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  @apply font-inter;
 }
