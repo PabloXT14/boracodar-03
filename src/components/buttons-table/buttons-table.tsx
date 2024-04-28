@@ -18,10 +18,10 @@ export const ButtonsTable = () => {
           </tr>
         </thead>
         <tbody>
-          <TableRow>
+          <TableRow className="[&>td]:pt-8">
             <TableCellLeft>Default</TableCellLeft>
             <TableCell>
-              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
+              <button className="pointer-events-none rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase transition-colors hover:bg-violet-800">
                 Default Primary
               </button>
             </TableCell>
@@ -50,7 +50,11 @@ export const ButtonsTable = () => {
 
           <TableRow>
             <TableCellLeft>Focus</TableCellLeft>
-            <TableCell></TableCell>
+            <TableCell>
+              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
+                Default Primary
+              </button>
+            </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
@@ -58,7 +62,11 @@ export const ButtonsTable = () => {
 
           <TableRow>
             <TableCellLeft>Disabled</TableCellLeft>
-            <TableCell></TableCell>
+            <TableCell>
+              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
+                Default Primary
+              </button>
+            </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
@@ -66,15 +74,23 @@ export const ButtonsTable = () => {
 
           <TableRow>
             <TableCellLeft>Loading</TableCellLeft>
-            <TableCell></TableCell>
+            <TableCell>
+              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
+                Default Primary
+              </button>
+            </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
           </TableRow>
 
-          <TableRow>
+          <TableRow className="[&>td]:pb-8">
             <TableCellLeft>Movable</TableCellLeft>
-            <TableCell></TableCell>
+            <TableCell>
+              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
+                Default Primary
+              </button>
+            </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>

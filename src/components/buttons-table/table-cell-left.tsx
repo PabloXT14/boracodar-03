@@ -7,7 +7,7 @@ export const TableCellLeft = ({ className, ...props }: TableCellLeftProps) => {
   return (
     <td
       className={twMerge(
-        'bg-violet-900 px-2.5 py-9 text-center text-xs font-normal uppercase',
+        'bg-violet-900 px-2.5 py-4 text-center text-xs font-normal uppercase',
         className,
       )}
       {...props}
