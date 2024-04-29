@@ -1,8 +1,11 @@
+import { AiOutlineLoading3Quarters } from 'react-icons/ai'
+import { IoMenu } from 'react-icons/io5'
 import { RxCursorArrow } from 'react-icons/rx'
 import { TableHeader } from './table-header'
 import { TableCellLeft } from './table-cell-left'
 import { TableRow } from './table-row'
 import { TableCell } from './table-cell'
+import { Button } from '../button'
 
 export const ButtonsTable = () => {
   return (
@@ -21,12 +24,10 @@ export const ButtonsTable = () => {
           <TableRow className="[&>td]:pt-8">
             <TableCellLeft>Default</TableCellLeft>
             <TableCell>
-              <button className="pointer-events-none rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase transition-colors hover:bg-violet-800">
-                Default Primary
-              </button>
+              <Button>Default Primary</Button>
             </TableCell>
             <TableCell>
-              <button>Default Secondary</button>
+              <Button>Default Secondary</Button>
             </TableCell>
             <TableCell>
               <button>Default Tertiary</button>
@@ -39,9 +40,7 @@ export const ButtonsTable = () => {
           <TableRow>
             <TableCellLeft>Hover</TableCellLeft>
             <TableCell>
-              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
-                Default Primary
-              </button>
+              <Button state="hover">Hover Primary</Button>
             </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
@@ -51,9 +50,7 @@ export const ButtonsTable = () => {
           <TableRow>
             <TableCellLeft>Focus</TableCellLeft>
             <TableCell>
-              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
-                Default Primary
-              </button>
+              <Button state="focus">Focus Primary</Button>
             </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
@@ -63,9 +60,7 @@ export const ButtonsTable = () => {
           <TableRow>
             <TableCellLeft>Disabled</TableCellLeft>
             <TableCell>
-              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
-                Default Primary
-              </button>
+              <Button disabled>Disabled Primary</Button>
             </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
@@ -75,9 +70,10 @@ export const ButtonsTable = () => {
           <TableRow>
             <TableCellLeft>Loading</TableCellLeft>
             <TableCell>
-              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
-                Default Primary
-              </button>
+              <Button state="loading">
+                <AiOutlineLoading3Quarters size={16} />
+                Loading Primary
+              </Button>
             </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
@@ -87,9 +83,10 @@ export const ButtonsTable = () => {
           <TableRow className="[&>td]:pb-8">
             <TableCellLeft>Movable</TableCellLeft>
             <TableCell>
-              <button className="rounded-full bg-violet-500 px-6 py-3 text-sm font-medium uppercase">
-                Default Primary
-              </button>
+              <Button state="movable">
+                <IoMenu size={16} />
+                Movable Primary
+              </Button>
             </TableCell>
             <TableCell></TableCell>
             <TableCell></TableCell>
