@@ -1,5 +1,3 @@
-import { AiOutlineLoading3Quarters } from 'react-icons/ai'
-import { IoMenu } from 'react-icons/io5'
 import { TableHeader } from './table-header'
 import { TableCellLeft } from './table-cell-left'
 import { TableRow } from './table-row'
@@ -101,20 +99,15 @@ export const ButtonsTable = () => {
           <TableRow>
             <TableCellLeft>Loading</TableCellLeft>
             <TableCell>
-              <Button state="loading">
-                <AiOutlineLoading3Quarters size={16} />
-                Loading Primary
-              </Button>
+              <Button state="loading">Loading Primary</Button>
             </TableCell>
             <TableCell>
               <Button variant="secondary" state="loading">
-                <AiOutlineLoading3Quarters size={16} />
                 Loading Secondary
               </Button>
             </TableCell>
             <TableCell>
               <Button variant="tertiary" state="loading">
-                <AiOutlineLoading3Quarters size={16} />
                 Loading Tertiary
               </Button>
             </TableCell>
@@ -126,20 +119,15 @@ export const ButtonsTable = () => {
           <TableRow className="[&>td]:pb-8">
             <TableCellLeft>Movable</TableCellLeft>
             <TableCell>
-              <Button state="movable">
-                <IoMenu size={24} />
-                Movable Primary
-              </Button>
+              <Button state="movable">Movable Primary</Button>
             </TableCell>
             <TableCell>
               <Button variant="secondary" state="movable">
-                <IoMenu size={24} />
                 Movable Secondary
               </Button>
             </TableCell>
             <TableCell>
               <Button variant="tertiary" state="movable">
-                <IoMenu size={24} />
                 Movable Tertiary
               </Button>
             </TableCell>

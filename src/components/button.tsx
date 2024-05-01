@@ -1,8 +1,10 @@
 import { ComponentProps } from 'react'
+import { AiOutlineLoading3Quarters } from 'react-icons/ai'
+import { IoMenu } from 'react-icons/io5'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const buttonStyles = tv({
-  base: 'inline-flex items-center gap-2 border-2 border-transparent px-6 py-3 text-sm font-medium uppercase leading-6 transition-colors disabled:cursor-not-allowed disabled:opacity-[0.56]',
+  base: 'inline-flex items-center justify-center gap-2 border-2 border-transparent px-6 py-3 text-sm font-medium uppercase leading-6 transition-colors disabled:cursor-not-allowed disabled:opacity-[0.56]',
   variants: {
     variant: {
       primary: [
@@ -75,6 +77,9 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button className={buttonStyles({ variant, state, className })} {...props}>
+      {state === 'loading' && <AiOutlineLoading3Quarters size={16} />}
+
+      {state === 'movable' && <IoMenu size={24} />}
       {children}
     </button>
   )
