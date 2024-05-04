@@ -10,12 +10,18 @@ export const ButtonsDemo = () => {
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
-        <button className="group fixed right-4 top-4 flex gap-2 rounded-full bg-zinc-700 p-2 text-white transition-all delay-1000">
+        <motion.button className="group fixed right-4 top-4 flex gap-2 rounded-full bg-zinc-700 p-2 text-white transition-all hover:px-4 hover:py-2">
           <LiaPuzzlePieceSolid size={20} />
-          <span className="hidden transition-all group-hover:block">
+          <motion.span
+            className="hidden transition-all group-hover:block"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
             Interaja comigo
-          </span>
-        </button>
+          </motion.span>
+        </motion.button>
       </Dialog.Trigger>
       <AnimatePresence>
         {open && (
