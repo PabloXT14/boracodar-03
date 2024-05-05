@@ -7,6 +7,18 @@ import { Button } from './button'
 export const ButtonsDemo = () => {
   const [open, setOpen] = useState(false)
 
+  const buttonAnimation = {
+    initial: { opacity: 0, x: 20 },
+    whileInView: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: 20 },
+  }
+
+  const descriptionAnimation = {
+    initial: { opacity: 0, x: -20 },
+    whileInView: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -20 },
+  }
+
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
@@ -38,22 +50,53 @@ export const ButtonsDemo = () => {
                 exit={{ x: '100%' }}
                 transition={{ duration: 0.3 }}
               >
-                <Dialog.Title className="mb-2 font-inter text-[32px] font-bold leading-none">
-                  Teste os botões
+                <Dialog.Title asChild>
+                  <motion.h2
+                    className="mb-2 font-inter text-[32px] font-bold leading-none"
+                    {...descriptionAnimation}
+                    transition={{ duration: 0.5 }}
+                  >
+                    Teste os botões
+                  </motion.h2>
                 </Dialog.Title>
-                <Dialog.Description className="mb-16 text-lg opacity-65">
-                  Interaja com os botões e observe a mudança de aparência e de
-                  cursores
+                <Dialog.Description asChild>
+                  <motion.p
+                    className="mb-16 text-lg opacity-65"
+                    {...descriptionAnimation}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                  >
+                    Interaja com os botões e observe a mudança de aparência e de
+                    cursores
+                  </motion.p>
                 </Dialog.Description>
 
                 <div className="flex w-full flex-col gap-8">
-                  <Button>Interaja comigo</Button>
-                  <Button variant="secondary" disabled>
-                    Interaja comigo
-                  </Button>
-                  <Button variant="tertiary" state="movable">
-                    Interaja comigo
-                  </Button>
+                  <motion.div
+                    {...buttonAnimation}
+                    transition={{ duration: 0.2, delay: 0.2 + 0.1 }}
+                  >
+                    <Button className="w-full">Interaja comigo</Button>
+                  </motion.div>
+                  <motion.div
+                    {...buttonAnimation}
+                    transition={{ duration: 0.2, delay: 0.2 + 0.2 }}
+                  >
+                    <Button className="w-full" variant="secondary" disabled>
+                      Interaja comigo
+                    </Button>
+                  </motion.div>
+                  <motion.div
+                    {...buttonAnimation}
+                    transition={{ duration: 0.2, delay: 0.2 + 0.3 }}
+                  >
+                    <Button
+                      className="w-full"
+                      variant="tertiary"
+                      state="movable"
+                    >
+                      Interaja comigo
+                    </Button>
+                  </motion.div>
                 </div>
               </motion.div>
             </Dialog.Content>
