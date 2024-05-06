@@ -22,13 +22,13 @@ export const ButtonsTable = () => {
 
   return (
     <motion.div
-      className="overflow-hidden rounded-lg border-b-[6px] border-r-[7px] border-b-violet-900 border-r-violet-900"
+      className="overflow-x-auto rounded-lg border-b-[6px] border-r-[7px] border-b-violet-900 border-r-violet-900"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 100 }}
       transition={{ duration: tableTransitionDuration }}
     >
-      <table className="w-full">
+      <table className="w-full min-w-[1058px]">
         <thead>
           <tr>
             <TableHeader className="w-[94px]"></TableHeader>

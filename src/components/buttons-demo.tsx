@@ -2,6 +2,7 @@ import { useState } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
 import { motion, AnimatePresence } from 'framer-motion'
 import { LiaPuzzlePieceSolid } from 'react-icons/lia'
+import { IoClose } from 'react-icons/io5'
 import { Button } from './button'
 
 export const ButtonsDemo = () => {
@@ -29,7 +30,7 @@ export const ButtonsDemo = () => {
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
         <motion.button className="group fixed right-4 top-4 flex gap-2 rounded-full bg-zinc-700 p-2 text-white transition-all hover:px-4 hover:py-2">
-          <LiaPuzzlePieceSolid size={20} />
+          <LiaPuzzlePieceSolid size={24} />
           <motion.span
             className="hidden transition-all group-hover:block"
             initial={{ opacity: 0 }}
@@ -50,15 +51,20 @@ export const ButtonsDemo = () => {
             />
             <Dialog.Content asChild forceMount>
               <motion.div
-                className="fixed bottom-0 right-0 top-0 w-fit max-w-[406px] bg-violet-950 px-11 py-28"
+                className="fixed bottom-0 right-0 top-0 w-fit max-w-[406px] bg-violet-950 px-10 py-28 lg:px-11"
                 initial={{ x: '100%' }}
                 whileInView={{ x: 0 }}
                 exit={{ x: '100%' }}
                 transition={{ duration: 0.3 }}
               >
+                <Dialog.Close asChild>
+                  <motion.button className="fixed right-6 top-6 flex gap-2 text-white lg:right-11 lg:top-11">
+                    <IoClose size={24} />
+                  </motion.button>
+                </Dialog.Close>
                 <Dialog.Title asChild>
                   <motion.h2
-                    className="mb-2 font-inter text-[32px] font-bold leading-none"
+                    className="mb-2 font-inter text-3xl font-bold leading-none lg:text-[32px]"
                     {...titleAnimation}
                     transition={{ duration: 0.5 }}
                   >
@@ -67,7 +73,7 @@ export const ButtonsDemo = () => {
                 </Dialog.Title>
                 <Dialog.Description asChild>
                   <motion.p
-                    className="mb-16 text-lg opacity-65"
+                    className="mb-10 text-base opacity-65 lg:mb-16 lg:text-lg"
                     {...descriptionAnimation}
                     transition={{ duration: 0.5, delay: 0.2 }}
                   >
