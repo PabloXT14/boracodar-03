@@ -13,9 +13,15 @@ export const ButtonsDemo = () => {
     exit: { opacity: 0, x: 20 },
   }
 
+  const titleAnimation = {
+    initial: { opacity: 0, x: -40 },
+    whileInView: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -40 },
+  }
+
   const descriptionAnimation = {
     initial: { opacity: 0, x: -20 },
-    whileInView: { opacity: 1, x: 0 },
+    whileInView: { opacity: 0.65, x: 0 },
     exit: { opacity: 0, x: -20 },
   }
 
@@ -53,7 +59,7 @@ export const ButtonsDemo = () => {
                 <Dialog.Title asChild>
                   <motion.h2
                     className="mb-2 font-inter text-[32px] font-bold leading-none"
-                    {...descriptionAnimation}
+                    {...titleAnimation}
                     transition={{ duration: 0.5 }}
                   >
                     Teste os botões
