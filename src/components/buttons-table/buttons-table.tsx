@@ -22,16 +22,16 @@ export const ButtonsTable = () => {
 
   return (
     <motion.div
-      className="overflow-x-auto rounded-lg border-b-[6px] border-r-[7px] border-b-violet-900 border-r-violet-900"
+      className="overflow-x-auto rounded-lg border-b-[6px] border-l-[7px] border-r-[7px] border-violet-900 md:border-l-0"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 100 }}
       transition={{ duration: tableTransitionDuration }}
     >
-      <table className="w-full min-w-[1058px]">
+      <table className="w-full min-w-[820px] md:min-w-[1058px]">
         <thead>
           <tr>
-            <TableHeader className="w-[94px]"></TableHeader>
+            <TableHeader className="hidden w-[94px] md:table-cell"></TableHeader>
             <TableHeader>Botão Primário</TableHeader>
             <TableHeader>Botão Secundário</TableHeader>
             <TableHeader>Botão Terciário</TableHeader>
@@ -40,7 +40,9 @@ export const ButtonsTable = () => {
         </thead>
         <tbody className="[&_button]:pointer-events-none">
           <TableRow className="[&>td]:pt-8">
-            <TableCellLeft>Default</TableCellLeft>
+            <TableCellLeft className="hidden md:table-cell">
+              Default
+            </TableCellLeft>
             <TableCell>
               <motion.div
                 {...buttonAnimation}
@@ -88,7 +90,9 @@ export const ButtonsTable = () => {
           </TableRow>
 
           <TableRow>
-            <TableCellLeft>Hover</TableCellLeft>
+            <TableCellLeft className="hidden md:table-cell">
+              Hover
+            </TableCellLeft>
             <TableCell>
               <motion.div
                 {...buttonAnimation}
@@ -138,7 +142,9 @@ export const ButtonsTable = () => {
           </TableRow>
 
           <TableRow>
-            <TableCellLeft>Focus</TableCellLeft>
+            <TableCellLeft className="hidden md:table-cell">
+              Focus
+            </TableCellLeft>
             <TableCell>
               <motion.div
                 {...buttonAnimation}
@@ -190,7 +196,9 @@ export const ButtonsTable = () => {
           </TableRow>
 
           <TableRow>
-            <TableCellLeft>Disabled</TableCellLeft>
+            <TableCellLeft className="hidden md:table-cell">
+              Disabled
+            </TableCellLeft>
             <TableCell>
               <motion.div
                 {...buttonAnimation}
@@ -242,7 +250,9 @@ export const ButtonsTable = () => {
           </TableRow>
 
           <TableRow>
-            <TableCellLeft>Loading</TableCellLeft>
+            <TableCellLeft className="hidden md:table-cell">
+              Loading
+            </TableCellLeft>
             <TableCell>
               <motion.div
                 {...buttonAnimation}
@@ -294,7 +304,9 @@ export const ButtonsTable = () => {
           </TableRow>
 
           <TableRow className="[&>td]:pb-8">
-            <TableCellLeft>Movable</TableCellLeft>
+            <TableCellLeft className="hidden md:table-cell">
+              Movable
+            </TableCellLeft>
             <TableCell>
               <motion.div
                 {...buttonAnimation}
