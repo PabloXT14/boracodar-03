@@ -1,10 +1,12 @@
-<h1 align="center"> Buttons & Cursors </h1>
+<h1 align="center" style="font-weight: bold;"> Buttons & Cursors </h1>
 
-O Buttons & Cursors (botões e cursores) é uma tela de documentação de botões e cursores que possui uma área de pré visualização dos mesmos. Os botões podem ser utilizados em aplicações web ou mobile.
+<!-- BADGES -->
 
 <p align="center">
-  🚧 Em desenvolvimento
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
+
+<!-- MENU -->
 
 <p align="center">
   <a href="#-deploy">Deploy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -13,9 +15,19 @@ O Buttons & Cursors (botões e cursores) é uma tela de documentação de botõe
   <a href="#-licença">Licença</a>
 </p>
 
+<!-- SHORT DESCRIPTION -->
+
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  O Buttons & Cursors (botões e cursores) é uma tela de documentação de botões e cursores que possui uma área de pré visualização dos mesmos. Os botões podem ser utilizados em aplicações web ou mobile.
 </p>
+
+<!-- STATUS OR DEPLOY LINK -->
+
+<p align="center">
+  🚧 Em desenvolvimento
+</p>
+
+<!-- EXAMPLE IMAGE COVER -->
 
 <p align="center">
   <img src=".github/cover.png" width="100%">
@@ -35,7 +47,7 @@ Veja uma demonstração visual das principais telas da aplicação:
 
 <p align="center">
   <img
-    src=".github/project-animation.gif"
+    src=".github/image-demonstration.png"
     alt="Animação do Projeto"
     title="Animação do Projeto"
     width="100%"
