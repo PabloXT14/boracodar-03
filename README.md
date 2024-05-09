@@ -24,7 +24,7 @@
 <!-- STATUS OR DEPLOY LINK -->
 
 <p align="center">
-  🚧 Em desenvolvimento
+  🚀 Finalizado
 </p>
 
 <!-- EXAMPLE IMAGE COVER -->
@@ -36,7 +36,7 @@
 
 ## 🔗 Deploy
 
-O deploy da aplicação pode ser acessada através do seguinte link: 
+O deploy da aplicação pode ser acessada através do seguinte [link](https://pabloxt14-buttons-and-cursors.vercel.app/)
 
 
 ## 🎨 Layout
