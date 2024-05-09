@@ -62,6 +62,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org/)
 - [React + Vite](https://vitejs.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
+- [Tailwind Merge](https://github.com/dcastil/tailwind-merge)
+- [Tailwind Variants](https://www.tailwind-variants.org/docs/introduction)
+- [Framer Motion](https://www.framer.com/motion/)
 
 
 ## 📝 Licença
