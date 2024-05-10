@@ -47,7 +47,7 @@ Veja uma demonstração visual das principais telas da aplicação:
 
 <p align="center">
   <img
-    src=".github/image-demonstration.png"
+    src=".github/project-animation.gif"
     alt="Animação do Projeto"
     title="Animação do Projeto"
     width="100%"
